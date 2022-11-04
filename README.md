@@ -40,3 +40,6 @@ Clone this repository into local directory.<br />
 - Open file `script.js` in repository and paste in tokens in place of XXXXX in two lines
 - Go to youtube or netflix video and turn on extension to enjoy subtitles with emotion recognition!
 - Note: If extension seems to stop working, head back to personal token page on Hugging Face and click Manage > Invalidate and Refresh, repaste tokens in `script.js`
+
+### For more info, read our [Devpost](https://devpost.com/software/expressify)
+
