@@ -37,12 +37,11 @@ def add_data(conn):
     # specify encoding
     with open(csv_file, "r", encoding="utf-8") as f:
         records = csv.reader(f)
-    cur = conn.cursor()
-    next(records)  # skip header
-    for r in records:
-        sql = """ INSERT INTO """ + table_name + """(text, label) VALUES(?,?) """
-        cur.execute(sql, r)
-
+        cur = conn.cursor()
+        next(records)  # skip header
+        for r in records:
+            sql = """ INSERT INTO """ + table_name + """(text, label) VALUES(?,?) """
+            cur.execute(sql, r)
 
 # Query 1: find count of each label
 query1 = """SELECT label, COUNT(*) FROM friends GROUP BY label"""
