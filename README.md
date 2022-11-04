@@ -1,6 +1,6 @@
-# HackDuke 2022 Emotion Expression Classifier for Autism 
+# Emotion Expression Classifier for Autism 
 
-## Won first place in education track.
+## Won first place in HackDuke 2022 education track.
 
 ## Inspiration
 Individuals with autism often struggle with alexithymia, which is characterized by difficulty in understanding one's own emotional state and can lead to a lack of empathy while interacting with others in society. This introduces a need for developmental curricula to aid in strengthening associations between emotions and various stimuli.
@@ -12,6 +12,8 @@ Our chrome extension enables individuals to turn on live-captioning for Youtube 
 
 ## How we built it
 We used sentiment analysis to take in the transcriptions of a selected video and classify phrases as 1 of 7 sentiments. We manually associated each of the 7 sentiments with a color that is often naturally seen as associated with that sentiment (1) (2).
+
+![Demo 3 drawio](https://user-images.githubusercontent.com/70456530/200072590-ca49a744-6b2c-497a-b834-f07a1c0a9e68.png)
 
 ## Challenges we ran into
 It was difficult only selecting 7 emotions, as the human brain can process over 27 categories of emotion (3).
