@@ -26,7 +26,7 @@ changeSubtitlesStyle = () => {
                     const response = await fetch(
                         "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
                         {
-                            headers: { Authorization: "Bearer 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" },
+                            headers: { Authorization: "Bearer XXXXX" },
                             method: "POST",
                             body: JSON.stringify(data),
                         }
@@ -58,8 +58,8 @@ changeSubtitlesStyle = () => {
                     async function query(data) {
                         const response = await fetch(
                             "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
-                            {
-                                headers: { Authorization: "Bearer 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" },
+                            { // add hugingface api token in Bearer
+                                headers: { Authorization: "Bearer XXXXX" },
                                 method: "POST",
                                 body: JSON.stringify(data),
                             }
