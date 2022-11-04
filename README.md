@@ -1,4 +1,4 @@
-# Emotion Expression Classifier for Autism 
+# Project 3 - Emotion Expression Classifier for Autism 
 
 ## Won first place in HackDuke 2022 education track.
 
@@ -8,15 +8,15 @@ Individuals with autism often struggle with alexithymia, which is characterized 
 Current curriculums are available in various forms, such as the LuxAI QTRobot, a doll-size robot targeted at educating autistic and special needs children. It was deemed of importance, however, to develop a more accessible resource, one that could potentially allow autistic children to learn the associations between emotions without being fully aware they are doing so. Therapies exist that aim to exploit human-native (1) connections between emotions and colors, where the color was shown at the same time as a phrase was read, or an image shown, for example.
 
 ## What it does
-Our chrome extension enables individuals to turn on live-captioning for Youtube videos, where the background color of the captions changes to be the color associated with the overall emotion of the current phrase.
+The Chrome Extension enables individuals to turn on live-captioning for Youtube videos, where the background color of the captions changes to be the color associated with the overall emotion of the current phrase.
 
-## How we built it
-We used sentiment analysis to take in the transcriptions of a selected video and classify phrases as 1 of 7 sentiments. We manually associated each of the 7 sentiments with a color that is often naturally seen as associated with that sentiment (1) (2).
+## How it is built
+We used sentiment analysis to take in the transcriptions of a selected video and classify phrases as 1 of 7 sentiments. We manually associated each of the 7 sentiments with a color that is often naturally seen as associated with that sentiment (1) (2). We fine-tuned the [model](https://huggingface.co/michellejieli/emotion_text_classifier?text=What%3F) on Hugging Face and used Javascript to build the Chrome Extension. The [dataset](https://huggingface.co/datasets/michellejieli/friends_dataset) we used to fine-tune the model is from the Friends TV sitcom, originally extracted from the SocialNLP EmotionX 2019 Challenge. I performed some simple EDA on the dataset using SQLite to analyze the unique emotions, counts of emotions, as well as min/max/average text dialogue length. 
 
 ![Demo 3](https://user-images.githubusercontent.com/70456530/200072657-59bdbcc0-32a2-4f75-92f7-14ff12104259.png)
 
-## Challenges we ran into
-It was difficult only selecting 7 emotions, as the human brain can process over 27 categories of emotion (3).
+## Challenges 
+It was difficult only selecting 7 emotions, as the human brain can process over 27 categories of emotion (3). Additionally, the fine-tuning the model with a large dataset takes a long time, so the model is not always correct at predicting emotions. 
 
 ## What's next for Expressify
 Adding computer vision techniques to classify facial expressions, adding customization with different color palettes to cover a wider range of people on the spectrum, and creating a platform for allowing users to practice specific emotions.
